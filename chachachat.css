@@ -1,0 +1,124 @@
+/*messages from others*/
+.bubble-recv {
+  position: relative;
+  width: 330px;
+  height: 75px;
+  padding: 10px;
+  background: lightskyblue;
+  color:  rgb(72, 72, 72);
+  border-radius: 10px;
+  border: #000000 solid 1px;
+  margin-bottom: 10px;
+}
+
+.bubble-revc::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 15px 0px;
+  border-color: transparent #000000;
+  display: block;
+  width: 0;
+  z-index: 0;
+  left: -16px;
+  top: 12px;
+}
+
+.bubble-recv::before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 15px 0px;
+  border-color: transparent lightskyblue;
+  display: block;
+  width: 0;
+  z-index: 1;
+  left: -16px;
+  top: 12px;
+}
+/*self messages*/
+.bubble-sent {
+  position: relative;
+  width: 330px;
+  height: 75px;
+  padding: 10px;
+  background: powderblue;
+  color: rgb(72, 72, 72);
+  border-radius: 10px;
+  border: #000000 solid 1px;
+  margin-bottom: 10px;  
+}
+
+.bubble-sent::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent powderblue;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: -15px;
+  top: 12px;
+}
+
+.bubble-sent::before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 0px 15px 15px;
+  border-color: transparent #000000;
+  display: block;
+  width: 0;
+  z-index: 0;
+  right: -16px;
+  top: 12px;
+}
+
+.spinner {
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+  transition: opacity 0.3s, width 0.3s;
+}
+
+.has-spinner.active {
+  cursor: progress;
+}
+
+.has-spinner.active .spinner {
+  opacity: 1;
+  width: auto;
+}
+
+.has-spinner.btn-mini.active .spinner {
+  width: 10px;
+}
+
+.has-spinner.btn-small.active .spinner {
+  width: 13px;
+}
+
+.has-spinner.btn.active .spinner {
+  width: 16px;
+}
+
+.has-spinner.btn-large.active .spinner {
+  width: 19px;
+}
+
+.panel-body {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+#title {
+  text-align: center;
+}
+
+
+
+
+
+
+
