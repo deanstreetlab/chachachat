@@ -1,4 +1,4 @@
-##ChaChaChat
+## ChaChaChat
 
 Re-coded version of the web chat app example in chapter 23 of [PHP and MySQL Web Development](https://app.box.com/s/huqhr79oaxq2w7w0lnzpzs5infu58roj) by Luke Welling.
 
@@ -15,7 +15,7 @@ Only minor modifications from original:
 Users open chachachat.html and enter messages to be broadcast to others.  
 Own messages appear on the right, other messages on the left.
 
-#### Organization
+### File Structure
 - The app is made up of 3 frontend files and 1 PHP file and MySQL.  
 - The frontend files comprise 1 html, 1 css, 1 js.  
 - The html is a simple interface to enter a message in a form and click send button to submit.  
@@ -24,7 +24,7 @@ Own messages appear on the right, other messages on the left.
 - The MySQL database is named as the app and having a single table named *chatlog*. The table contains four columns: id int(8) auto_increment primary key, message tinytext, sender varchar(50), and timestamp int(11).  
 - The PHP connects to DB and provides **send message** and **check message** functions, distingushed by POST and GET requests.  
 
-#### The PHP Script
+### The PHP Script
 The script opens a session, connects to DB, checks if a request is POST or GET then switch to either a **send message** or **check message** method, and finally returns json to caller.  
 
 User ID assigned using session ID, time standardized to UCT.  
