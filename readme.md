@@ -11,7 +11,7 @@ Only minor modifications from original:
 - CSS stylings to my personal liking
 - linking enter key to send button click
 
-####How It Works
+###How It Works
 Users open chachachat.html and enter messages to be broadcast to others.  
 Own messages appear on the right, other messages on the left.
 
